@@ -1,0 +1,15 @@
+.bag {
+    background-image: url(../images/login background image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh !important;
+    width: 100vw !important;
+}
+
+/* Mobile and tablet styles */
+@media (max-width: 768px) {
+    .bag {
+        background-color: red; /* Set background color to red for mobile and tablet */
+        background-image: none; /* Remove background image */
+    }
+}

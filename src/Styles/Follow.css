@@ -1,0 +1,45 @@
+/* For mobile devices, ensure horizontal scroll for table */
+.table-responsive {
+    overflow-x: auto;
+}
+
+/* Modal positioning fix */
+.modal {
+    z-index: 1050;
+}
+
+.modal-backdrop {
+    z-index: 1040;
+}
+
+/* Ensure navbar remains above the content */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1060;
+}
+
+/* Adjust main content to avoid overlapping with the navbar */
+.main-content {
+    margin-top: 80px; /* Adjust based on the height of the navbar */
+}
+
+/* Ensure proper spacing and font sizes for mobile devices */
+@media (max-width: 768px) {
+    .breadcrumb {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+
+    .form-control {
+        font-size: 0.9rem;
+    }
+
+    .table-responsive {
+        overflow-x: auto; /* Horizontal scroll for smaller screens */
+    }
+}

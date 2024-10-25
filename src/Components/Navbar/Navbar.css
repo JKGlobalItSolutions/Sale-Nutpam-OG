@@ -1,0 +1,39 @@
+/* Navbar container */
+nav {
+  display: flex;
+  align-items: center; /* Vertically centers items */
+  padding: 15px 0; /* Removed side padding for full-width */
+  background-color: #ff000033; /* Deep background for contrast */
+  color: #fff; /* Crisp white text for readability */
+  height: 80px; /* Height of the navbar */
+  position: sticky; /* Make navbar sticky */
+  top: 0; /* Sticks to top of viewport */
+  z-index: 50; /* Ensure navbar is on top */
+  width: 100%; /* Ensure navbar takes full width */
+}
+
+/* Menu icon on the left */
+nav .menu-icon {
+  cursor: pointer; /* Adds a pointer to indicate clickable */
+  height: 50px; /* Height for menu icon */
+}
+
+/* Profile icon on the right */
+nav .profile-icon {
+  width: auto; /* Maintain proportions */
+  cursor: pointer; /* Adds interaction cue */
+  border: 2px solid red; /* Border for profile icon */
+  border-radius: 50%; /* Circular profile icon */
+}
+
+/* For mobile screens, keeping alignment intact */
+@media (max-width: 768px) {
+  nav {
+      padding: 10px 0; /* Slightly reduce padding for smaller screens */
+      height: 70px; /* Adjust height to save space on mobile */
+  }
+
+  nav .menu-icon, nav .profile-icon {
+      height: 40px; /* Resize icons accordingly */
+  }
+}
